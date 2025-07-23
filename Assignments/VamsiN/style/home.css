@@ -1,0 +1,39 @@
+header{ 
+    background-image: url(../HTML/Assets/images/banner2.jpg);
+    background: position 100%;;
+    background-size: cover;
+    height: 150px;
+    border-radius: 30px;
+}
+header h1{
+    text-align: center;
+    color: rgb(9, 17, 37);
+    padding-top: 40px;
+   
+
+
+}
+.navbar{
+    text-align: right;
+    word-spacing: 20px;
+    padding-top: 15px;
+    
+}
+.navbar a{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: aliceblue;
+    background-color: rgb(129, 66, 43);
+}
+.navbar a:hover{
+    background-color: firebrick;
+}
+
+.section1{
+    background-color: rgb(241, 199, 145);
+    border-radius: 30px;
+    height: 20vh;
+    text-align: center;
+    
+}
