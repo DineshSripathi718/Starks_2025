@@ -1,0 +1,66 @@
+div{
+    background-color: bisque; color: blue;
+}
+.p{
+    background-color: aqua; color: blueviolet;
+}
+#div1{
+    background-color:blueviolet;color: crimson;
+}
+/*
+@font-face {
+    font-family:bitcount single,system-ui ;
+    src: url(../fontstyle/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+</style>);
+*/
+
+
+
+h1{
+    font-size: 70px;
+    color: blue;
+    word-spacing: 20px;
+    letter-spacing: 20px;
+    font-family:bitcount single,system-ui;
+    font-style: oblique;
+    font-weight: 900;
+    text-decoration-thickness: 2px;
+    text-decoration-color: blueviolet;
+    text-decoration-style:wavy;
+    text-decoration-line: underline;
+    text-shadow: 0px;0px;5px;black;
+    
+}
+
+nav{
+    background-color: fuchsia; color:yellow;
+}
+
+p{
+    line height: 20px;
+}
+div p{
+    line height: 20px;
+}
+header p{
+    line-height: 10px;
+}
+.para1{
+    background-color: rgb(239, 103, 103); color: black;
+}
+.div1{
+    background:linear-gradient  (white,blue)
+}
+.div1{
+    background:url('https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    text-shadow: 0px;0px;1px;black;
+
+}

@@ -1,0 +1,306 @@
+
+/*
+@font-face{
+    font-family:  "Special Gothic Expanded One", sans-serif;
+    src: url(../fontstyle\ recipe/)
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+header nav h1{
+    font-size: 2em;
+    color: blueviolet;
+    letter-spacing: 2px;
+    word-spacing:2px;
+    font-family:  "Special Gothic Expanded One", sans-serif;
+    font-style: oblique;
+    font-weight: 700;
+    line-height: 50px;
+    background-color:antiquewhite;
+    text-decoration-thickness: 2px;
+    text-decoration-style: dotted;
+    text-decoration-color: deeppink;
+    text-decoration-line: underline;
+    text-shadow: 5px 5px 5px grey;
+    background: linear-gradient(pink,white);
+}
+.div1 p{
+    background-color:deeppink; color:aqua;
+    font-size: 30px;
+    letter-spacing:none;
+    word-spacing:none;
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration-thickness: 2px;
+    text-decoration-style:initial;
+    text-decoration-color:blueviolet;
+    text-decoration-line:underline;
+    text-shadow: 5px 5px 5px black;
+
+}
+#p1{
+    font-size: 20px;
+    color:darkblue;
+    letter-spacing: 2px;
+    word-spacing:1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px;
+    background-color:plum;
+    text-decoration-thickness:inherit;
+    text-decoration-style:double;
+    text-decoration-color: deeppink;
+    text-decoration-line:underline;
+    text-shadow: 5px 5px 5px gray;
+
+}
+#para{
+    background-color:darksalmon; color:forestgreen;
+    font-size: 15px;
+    letter-spacing: 50%;
+    word-spacing:2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px; 
+    
+}
+.ol{
+    font-size: 1em;
+    color:brown;
+    letter-spacing: 1px;
+    word-spacing:1px;
+    font-family:Arial, Helvetica, sans-serif  ;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px;
+    background-color:darkseagreen;
+} 
+#p2{
+    font-size: 20px;
+    color:darkmagenta;
+    letter-spacing: 1px;
+    word-spacing:1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px;
+    background-color:lightcoral;
+    text-decoration-thickness:inherit;
+    text-decoration-style:double;
+    text-decoration-color:blue;
+    text-decoration-line:underline;
+    text-shadow: 2px 2px 2px grey;
+
+}
+.ol2{
+    font-size: 1em;
+    color:darkslateblue;
+    letter-spacing: 1px;
+    word-spacing:1px;
+    font-family:Arial, Helvetica, sans-serif  ;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px;
+    background-color:thistle;
+}
+#p3{
+    font-size: 20px;
+    color:darkturquoise;
+    letter-spacing: 2px;
+    word-spacing:1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px;
+    background-color:crimson;
+    text-decoration-thickness:inherit;
+    text-decoration-style:double;
+    text-decoration-color:darkkhaki;
+    text-decoration-line:underline;
+    text-shadow: 5px 5px 5px black;
+
+}
+.ol3{
+    font-size: 1em;
+    color:lavenderblush;
+    letter-spacing: 1px;
+    word-spacing:1px;
+    font-family:Arial, Helvetica, sans-serif  ;
+    font-style: oblique;
+    font-weight: 50%;
+    line-height: 30px;
+    background-color:cornflowerblue;
+}
+
+/*home.html*/
+header nav{
+    background-color:deeppink ;
+    color: blue;
+    border-width: 10px;
+    border-style:inherit;
+    border-color: blueviolet;
+    border-radius: none;
+    padding:10px 10px 10px 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:italic;
+    font-weight: 800;
+}
+
+header a:hover{
+    background-color:darkorange;
+    color:red;
+}
+
+.h{
+    font-size:30px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color: lightsalmon;
+    color: chartreuse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight:900;
+    line-height:1.5em;
+    text-decoration-thickness: 2px;
+    text-decoration-style:solid;
+    text-decoration-color: orchid ;
+    text-decoration-line: underline;
+    text-align:left;
+    text-shadow: 5px 5px 5px grey;
+}
+.p1{
+    font-size:15px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color:darkmagenta;
+    color:lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    font-weight:500;
+    line-height:1.5em;
+}
+.h1{
+    font-size:25px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color:darkgoldenrod;
+    color:blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight:900;
+    line-height:1.5em;
+    text-decoration-thickness: 2px;
+    text-decoration-style:solid;
+    text-decoration-color:greenyellow ;
+    text-decoration-line: underline;
+    text-align:left;
+    text-shadow: 5px 5px 20px black;
+}
+h2{
+    font-size:20px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color:chartreuse;
+    color:deeppink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight:900;
+    line-height:1.5em;
+    text-decoration-thickness: 2px;
+    text-decoration-style:solid;
+    text-decoration-color:darkblue ;
+    text-decoration-line: underline;
+    text-align:left;
+    text-shadow: 5px 5px 5px grey;
+}
+
+
+.img1 button:hover{
+    background-color: deeppink;
+    color: blueviolet;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: 700;
+    border:5px solid blueviolet;
+    border-radius: 5px;
+    transition: all 3s ease-in-out;
+
+}
+.img container .s1 .p1 .img1{
+    display: inline-block;
+}
+.img container{
+    width:300px;
+    height:300px;
+    background-color: plum;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.cm{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height:100%
+}
+.s1 .p2{
+    width= 50%;
+    font-family:cursive;
+
+}
+
+.s1{
+    font-size:15px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color:darkorange;
+    color:blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight:900;
+    line-height:1.5em;
+    text-decoration-thickness: 2px;
+    text-decoration-style:solid;
+    text-decoration-color:deeppink ;
+    text-decoration-line: underline;
+    text-align:left;
+    text-shadow: 10px 10px 10px gray;
+    padding-top:10px;
+    margin-bottom: 10px;
+}
+.p2{
+   font-size:15px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color:darkgreen;
+    color:dodgerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    font-weight:500;
+    line-height:1.5em; 
+}
+.h3{
+    font-size:20px;
+    letter-spacing: 0.5px;
+    word-spacing:1px ;
+    background-color:chartreuse;
+    color:deeppink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight:900;
+    line-height:1.5em;
+    text-decoration-thickness: 2px;
+    text-decoration-style:solid;
+    text-decoration-color:darkblue ;
+    text-decoration-line: underline;
+    text-align:left;
+    text-shadow: 5px 5px 5px grey;
+}

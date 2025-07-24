@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Stuffed Brinjal Curry</title>
+        <link rel="stylesheet" href="./style recipe/index.css recipe">
+    </head>
+        <body>
+            <nav>
+            <h1>Preparation Of Stuffed Brinjal Curry</h1>
+            </nav>
+            <p><b>Description:</b></p>
+
+            <p>I had choosen this reciepe because this dish is rich in vitamins,minerals,fiber etc and it is known as king of vegetables.This curry goes perefect with both rice and chappathi.</p>
+            <p><b>Ingredients:</b></p>
+            <ol type="A">
+                <li>Vankaya</li>
+                <li>Onion-1 large</li>
+                <li>Oil-3Tbsp</li>
+                <li>Cumin Seeds-1Tbsp</li>
+                <li>Salt-2Tbsp</li>
+                <li>Turmeric powder-1Tbsp </li>
+                <li>Red Chilli Powder-2Tbsp</li>
+                <li>Ginger Garlic Paste-1Tbsp</li>
+                <li>Tamarind-lemon size</li>
+            </ol>
+            <p><b>Stuffing Masala Ingredients</b></p>
+            <ol type="1">
+                <li>Peanuts-1cup</li>
+                <li>coriander Seeds-2Tbsp</li>
+                <li>Dry Coconut Flakes-2Tbsp</li>
+                <li>Cinnamon-1stick</li>
+                <li>Clove-2</li>
+                <li>Sesame Seeds-1/2cup</li>
+            </ol>
+            <p><b>Steps To Prepare:</b></p>
+            <ul type="circle">
+                <li>Take brinjals to make split on it and soak it for 10mints in salt water</li>
+                <li>Take brinjals which have slits on it and stuff it with the blended masala</li>
+                <li>Take a pan and add some oli</li>
+                <li>Add some clove,sesame,cinnamon and stuffed brinjal to it</li>
+                <li>Cook for 15 mints by stiring it and then add the leftover grinfed masala with some tamarind water</li>
+                <li>As oil is separated from the curry its is well cooked</li>
+                <li>Finally garnish with some coriander leaves</li>
+            </ul>
+            <image src="./assets/stuffed brinjal.jpg" alt="stuffed brinjal" width="100%"></image>
+            <video src="./assets/videos.html" alt="stuffed brinjal curry" width="100"control loop></video>
+            
+        </body>
+</html>
