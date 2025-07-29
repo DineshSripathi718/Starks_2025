@@ -1,0 +1,11 @@
+header{
+    background-image: url(../HTML/Assets/images/bghead.jpg);
+    background-position: auto;
+    background-size: cover;
+    height: 150px;
+
+}
+.navbars{
+    text-align: end;
+    word-spacing: 20px;
+}
