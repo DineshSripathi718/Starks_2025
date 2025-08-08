@@ -1,0 +1,42 @@
+
+@media screen and (max-width: 767px){
+    header{
+        padding : 10px 10px;
+    }
+    header nav{
+        display: none;
+    }
+
+    .crafted-container{
+        height: fit-content;
+    }
+
+    .interiorDesign{
+        gap : 100px;
+    }
+
+    .interiorDesign .images-container{
+        grid-template-rows: 100px 100px;
+    }
+
+    .crafted-container .image-container:hover .image{
+        transform: translateY(-10px);
+    }
+    header button{
+        display: flex;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+    
+    .cover-container{
+        height: 70svh;
+    }
+    .interiorDesign,
+    .crafted-container{
+        height: fit-content;
+    }
+
+}

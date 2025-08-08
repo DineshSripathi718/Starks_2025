@@ -1,0 +1,318 @@
+/* div{
+    background-color: brown;
+    color : white;
+}
+
+.index  .grp1{
+    background-color: yellow;
+    color : black;
+    font-size: 20px;
+}
+
+#div1{
+    background-color: blue;
+    color : white;
+}
+
+header{
+    background-color: rgb(4, 255, 0);
+    font-size: 25px;
+}
+
+.grp1{
+    background-color: pink;
+} */
+
+
+/* @font-face {
+    font-family: "BitStyle";
+    src: url('../fontstyles/Bitcount_Grid_Single/BitcountGridSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+main{
+    font-size: 1em;
+}
+
+h1{
+    font-size: 4em;
+    color : green;
+    letter-spacing: 20px;
+    word-spacing: 12px;
+    font-family: "Bitcount Grid Single";
+    /* font-style: italic; */
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* p{
+    line-height: 80px;
+    background-color: red;
+    color : rgb(255, 255, 255);
+    background: url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D');
+    background-size : cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+}
+
+.para1{
+    background: url('https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg');
+    background-size : cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+
+.background h1,
+.background p{
+    margin : 0px;
+}
+
+.background h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16em;
+    font-weight: 900;
+    color : transparent;
+
+    border : 10px double green;
+    border-radius: 10px 60px 40px 100px;
+    margin-bottom : 10px;
+}
+
+.background{
+    text-align: center;
+    background : url('https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain');
+    background-clip: text;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    min-width:700px;
+    max-width:1000px;
+}
+
+.background p{
+    background-color: red;
+}
+
+.boxShadow{
+    background-color: yellow;
+    height: 100svh;
+    text-align: center;
+}
+
+.boxShadow h1{
+    padding : 10px;
+    background-color: red;
+    font-family: 'Times New Roman', Times, serif;
+    color : white;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.657);
+}
+
+/* .side-by-side{
+    padding : 10px;
+}
+
+.side-by-side .image-container,
+.side-by-side .container{
+    display : inline-block;
+}
+
+.side-by-side .image-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.side-by-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.side-by-side .container{
+    margin-left: 30px;
+    width: 50%;
+    font-family: cursive;
+}
+
+.side-by-side .title{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.side-by-side button{
+    font-family: inherit;
+    background-color: green;
+    color : white;
+    font-size: 1.2em;
+    padding : 10px;
+    border-radius: 10px;
+    border : 1px solid rgb(255, 0, 0);
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.container:hover button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    background-color: white;
+    border-color: green;
+    color : green;
+} */
+
+header{
+    background-color: black;
+    color : white;
+    padding: 10px;
+}
+header nav li{
+    display: inline-block;
+    margin : 0px 10px;
+    font-size: 2em;
+    background-color: yellow;
+}
+
+header nav a{
+    color : inherit;
+    text-decoration: none;
+    background-color: black;
+    padding : 10px;
+    border-radius: 10px;
+    transition: all .4s linear;
+    outline: none;
+}
+
+header a:is(:hover, :focus){
+    background-color: white;
+    color : black;
+    outline: none;
+}
+
+/* .psudoElementEx h1::before{
+    content : "NEW";
+    font-size: 10px;
+    color : white;
+    background-color: red;
+    font-family: monospace;
+    padding : 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.flex-example{
+    margin-top: 30px;
+    padding : 10px;
+    height: 100svh;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+} */
+
+/* .flex-example div{
+    flex : 1;
+} */
+
+/* .flex-example div:nth-child(odd){
+    background-color: rgb(0, 98, 255);
+    color : white;
+    padding : 10px;
+    flex : 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.flex-example div:nth-child(even){
+    background-color: red;
+    color : white;
+    padding : 10px;
+    flex : 2;
+    min-width: 200px;
+} */
+
+.side-by-side{
+    display: flex;
+    align-items: center;
+    gap : 40px;
+    flex-wrap: wrap;
+}
+
+.image-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    min-width: 200px;
+    flex : 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap : 10px;
+}
+
+.container .title{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.grid-example{
+    height: 100svh;
+    background-color: yellow;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas: 
+    'content1 content1 content3'
+    'content2 content4 content3';
+    gap : 10px;
+}
+
+.grid-example div{
+    border : 1px solid white;
+}
+
+.grid-example div:nth-child(even){
+    background-color: red;
+    color : white;
+}
+
+.grid-example div:nth-child(odd){
+    background-color: blue;
+    color : white;
+}
+
+.div1{
+    grid-area: content1;
+}
+
+.div2{
+    grid-area: content2;
+    background-color: black;
+}
+
+.div3{
+    grid-area: content3;
+}
+.div4{
+    grid-area: content4;
+}

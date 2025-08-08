@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <section>
+        <div>
+            <dfn>
+                <dt><h1>Variables</h1></dt>
+                <dd>
+                    Variables are used to hold the data temp in memory.
+                </dd>
+            </dfn>
+            <h3>Rules : </h3>
+            <ul>
+                <li>We shouldn't start variable name with numbers</li>
+                <li>We shouldn't use special characters except _ and $ when declaring variables</li>
+                <li>We shouldn't use the keywords as variable names</li>
+            </ul>
+            <h3>Declaration</h3>
+            <ul>
+                <li>
+                    <dt>Let : (ES6)</dt>
+                    <dd>
+                        we can assign/ change value to the variable at any point during execution.
+                    </dd>
+                </li>
+                <li>
+                    <dt>const : (ES6)</dt>
+                    <dd>
+                        we can assign value at the time of declaring the variable and we can't override the value.
+                    </dd>
+                </li>
+                <li>
+                    <dt>var : </dt>
+                    <dd>
+                        we can assign/ change value to the variable at any point during execution.
+                    </dd>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>DataTypes : </h1>
+            <p>Used to define the type of data we are storing inside the variable</p>
+            
+            <h3>List of datatypes</h3>
+            <ul>
+                <li>numbers - standard numbers and decimal</li>
+                <li>string - collection of alphabets and special characters</li>
+                <li>boolean - true or false</li>
+            </ul>
+            <b>
+                <i>
+                    Javascript it is a dynamically typed lang. It will automatically assign datatype to the variable based on the  store value inside it
+                </i>
+            </b>
+        </div>
+    </section>
+    <section>
+        <h2>Operators : </h2>
+        <p>
+            Tools -> to perform an operation.
+        </p>
+        <ol>
+            <li>
+                <dt>Assignment ops (=) : </dt>
+                <dd>
+                    used to assign values to the variable.
+                    <ol>
+                        <li>
+                            <dt>assignment : </dt>
+                            <dd>
+                                <code>
+                                    let variableName = value;
+                                </code>
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>shorthand assignment : </dt>
+                            <dd>
+                                we use shorthand assignment when we are using a certain variable for the math operation and want to store the result inside the same variable then we use this shorthand assignment operator
+                                <pre>
+                                    <code>
+                                        let value1 = 6;
+                                        let value2 = 7;
+
+                                        //add value2 with value1 and store the result inside value1
+
+                                        console.log(value1+" before the operation")
+
+                                        value1 += value2; //value1 = value1 + value2
+
+                                        console.log(value1+" after the operation")
+                                    </code>
+                                </pre>
+                            </dd>
+                        </li>
+                    </ol>
+                </dd>
+            </li>
+            <li>
+                <dt>
+                    Arth Ops (+, -, *, / , %, **) : 
+                </dt>
+                <dd>
+                    To perform mathmatical operations we use the arth ops.
+                    <ul>
+                        <li>
+                            <h3>addition : </h3>
+                            <code>
+                                <pre>
+                                    let value1 = 4;
+                                    let value2 = 5;
+                                    let result = value1 + value2;
+
+                                    console.log(result);
+                                </pre>
+                            </code>
+                        </li>
+                        <li>
+                            <h3>subtraction : </h3>
+                            <code>
+                                <pre>
+                                    let value1 = 4;
+                                    let value2 = 5;
+                                    let result = value1 - value2;
+
+                                    console.log(result);
+                                </pre>
+                            </code>
+                        </li>
+                        <li>
+                            <h3>multiplication : </h3>
+                            <code>
+                                <pre>
+                                    let value1 = 4;
+                                    let value2 = 5;
+                                    let result = value1 * value2;
+
+                                    console.log(result);
+                                </pre>
+                            </code>
+                        </li>
+                        <li>
+                            <h3>division : </h3>
+                            <code>
+                                <pre>
+                                    let value1 = 4;
+                                    let value2 = 5;
+                                    let result = value1 / value2;
+
+                                    console.log(result);
+                                </pre>
+                            </code>
+                        </li>
+                        <li>
+                            <h3>Modulo Division</h3>
+                            <p>
+                                When we are using modulo division it will return the very 1st reminder of the division operation.
+                            </p>
+                            <code>
+                                <pre>
+                                    let value1 = 14;
+                                    let value2 = 5;
+                                    let result = value1 % value2;
+
+                                    console.log(result);
+                                </pre>
+                            </code>
+                        </li>
+                        <li>
+                            <h3>Exp  : </h3>
+                            <code>
+                                <pre>
+                                    let value1 = 5;
+                                    let value2 = 3;
+                                    let result = value1 ** value2;
+
+                                    console.log(result);
+                                </pre>
+                            </code>
+                        </li>
+                    </ul>
+
+                    <b>NOTE : 
+                        <i>
+                            Arth ops follows BODMAS rule.
+                            Bracket Of
+                            Division Multiplication Addition Substraction
+                        </i>
+                    </b>
+                </dd>
+            </li>
+            <li>Relational Ops/ comp</li>
+            <li>Logical ops</li>
+            <li>Bitwise ops</li>
+            <li>uniary ops / inc and dec</li>
+            <li>conditional Ops/ ternary ops</li>
+        </ol>
+    </section>
+</body>
+<!-- 
+    linking javascript file with script tag
+-->
+<script src="./scripts/index.js"></script>
+</html>
