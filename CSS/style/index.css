@@ -66,7 +66,10 @@ h1{
     background-attachment: fixed;
 } */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e821efc906748680be4621d70b45665c10245218
 .background h1,
 .background p{
     margin : 0px;
@@ -113,6 +116,7 @@ h1{
     width: fit-content;
     border-radius: 10px;
     box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.657);
+<<<<<<< HEAD
 }
 
 /* .side-by-side{
@@ -315,4 +319,6 @@ header a:is(:hover, :focus){
 }
 .div4{
     grid-area: content4;
+=======
+>>>>>>> e821efc906748680be4621d70b45665c10245218
 }
