@@ -194,10 +194,299 @@
                     </b>
                 </dd>
             </li>
-            <li>Relational Ops/ comp</li>
-            <li>Logical ops</li>
-            <li>Bitwise ops</li>
-            <li>uniary ops / inc and dec</li>
+            <li>
+                <dt>
+                    Relational Ops/ comp : ( < , > , == , != , >=, <= , ===, !==) 
+                </dt>
+                <dd>
+                    Used to find the relation b/w two values. true or flase as an output
+                    <ul>
+                        <li>less than</li>
+                        <li>greater than</li>
+                        <li>equalto</li>
+                        <li>not equal to</li>
+                        <li>less than equal to</li>
+                        <li>greater than equal to</li>
+                        <li>strict equal to - compares both data type and data</li>
+                        <li>strict not equal to - compares both datatype and data</li>
+                    </ul>
+                    <pre>
+                        <code>
+                            let a = "5";
+                            let b =  5;
+                            console.log(a > b); //  false
+                            console.log(a < b); // false
+                            console.log(a == b) //true
+                            console.log(a != b); //false
+                            console.log(a >= b); //true
+                            console.log(a <= b ); // true
+                            console.log(a === b); //false
+                            console.log(a !== b);// true
+                        </code>
+                    </pre>
+                </dd>
+            </li>
+            <li>
+                <dt>
+                    Logical ops : 
+                </dt>
+                <dd>
+                    combine two booleans and will generate one boolean value.
+                    <ul>
+                        <li>
+                            <div>
+                                <h4>and (&&) : </h4>
+                                <p>
+                                    <pre>
+                                        <code>
+                                            input1  input2  output
+                                            true    true    true
+                                            true    false   false 
+                                            false   true    false
+                                            false   false   false
+                                        </code>
+                                    </pre>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>or (||) : </h4>
+                                <p>
+                                    <pre>
+                                        <code>
+                                            input1  input2  output
+                                            true    true    true
+                                            true    false   true
+                                            false   true    true
+                                            false   false   false
+                                        </code>
+                                    </pre>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>not (!): </h4>
+                                <p>
+                                    one value will be accept as input and generate one value.
+
+                                    <pre>
+                                        <code>
+                                            input   output 
+                                            true    false
+                                            false   true
+                                        </code>
+                                    </pre>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+            </li>
+            <li>
+                <dt>Bitwise ops : </dt>
+                <dd>
+                    <p>
+                        Used to perform the bit by bit operations. (binary number - 0,1)
+                    </p>
+                    <pre>
+                        4 bits - 2 <sup>bits-1</sup> = 2<sup>4-1</sup> = 2<sup>3</sup>
+
+                        2<sup>3</sup> 2<sup>2</sup> 2<sup>1</sup> 2<sup>0</sup>
+                        8   4   2   1   =   15
+                        0   0   0   0   =   0
+                        0   0   0   1   =   1
+                        0   0   1   0   =   2
+                        0   0   1   1   =   3
+                        0   1   0   0   =   4
+                        0   1   0   1   =   5
+                        0   1   1   0   =   6
+                        0   1   1   1   =   7
+                        1   0   0   0   =   8   
+                        1   0   0   1   =   9
+                        1   0   1   0   =   10
+                        1   0   1   1   =   11
+                        1   1   0   0   =   12
+                        1   1   0   1   =   13
+                        1   1   1   0   =   14
+                        1   1   1   1   =   15
+
+                        
+                    </pre>
+                    <ul>
+                        <li>
+                            <dt>and (&)</dt>
+                            <dd>
+                                <pre>
+                                    <code>
+                                        input1  input2  output
+                                        true    true    true
+                                        true    false   false 
+                                        false   true    false
+                                        false   false   false
+                                    </code>
+                                    3&5
+                                        0   0   1   1   -   3
+                                        0   1   0   1   -   5
+                                        --------------
+                                        0   0   0   1   -   1
+                                </pre>
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>or(|)</dt>
+                            <dd>
+                                <pre>
+                                    <code>
+                                        input1  input2  output
+                                        true    true    true
+                                        true    false   true 
+                                        false   true    true
+                                        false   false   false
+                                    </code>
+                                    3 | 5
+                                        0   0   1   1   -   3
+                                        0   1   0   1   -   5
+                                        --------------
+                                        0   1   1   1   -   7
+                                </pre>
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>XOR (^)</dt>
+                            <dd>
+                                <pre>
+                                    <code>
+                                        input1  input2  output
+                                        true    true    false
+                                        true    false   true 
+                                        false   true    true
+                                        false   false   false
+                                    </code>
+                                   7 ^ 4
+                                        0   1   1   1   -  7
+                                        0   1   0   0   -  4
+                                        --------------
+                                        0   0   1   1   -   3
+                                </pre>
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>NOT(~)</dt>
+                            <dd>
+                                we can apply on only one value.
+                                value 7 - negative 8 values
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>Right Shift (>>)</dt>
+                            <dd>
+                                We can only apply it on one value and we have to move the bits towards right side as per the given steps
+                                
+                                <pre>
+                                    7 >> 3
+
+                                    0   1   1   1 | danger
+                                    -----------------------
+                                    0   0   1   1 | 1   - 1bit
+                                    -----------------------
+                                    0   0   0   1   |   1   - 2 bits
+                                    -------------------- 
+                                    0   0   0   0   |   1   - 3bits 
+                                    --------------------
+                                    0   0   0   0   -   0
+                                </pre>
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>Left Shift ( << )</dt>
+                            <dd>
+                                We can only apply it on one value and we have to move the bits towards left side as per the given steps
+                                
+                                <pre>
+                                    7 << 3
+
+                                    0   0   0   0   0   1   1   1
+                                    -----------------------------
+                                    0   0   0   0   1   1   1   0   - 1bit
+                                    -----------------------------
+                                    0   0   0   1   1   1   0   0   -   2bits
+                                    -----------------------------
+                                    0   0   1   1   1   0   0   0      -   3bits
+                                    --------------------------------
+                                            32  16  8   4   2   1
+                                    
+                                </pre>     
+                            </dd>
+                        </li>
+                    </ul>
+                </dd>
+            </li>
+            <li>
+                <dt>uniary ops / inc and dec : </dt>
+                <dd>
+                    we either increase or decrease the value by 1.
+                    <ol>
+                        <li>
+                            <dt>Increment (++) : </dt>
+                            <dd>
+                                type of increment
+                                <ol>
+                                    <li>
+                                        <div>pre : </div>
+                                        <div>
+                                            we update the value first and then we use the value.
+                                        </div>
+                                        <pre>
+                                            let a = 5;
+                                            ++ a;
+                                        </pre>
+                                    </li>
+                                    <li>
+                                        <div>post : </div>
+                                        <div>
+                                            we use the value first and then we update the value.
+                                        </div>
+                                        <pre>
+                                            let a = 5;
+                                            a ++;
+                                        </pre>
+                                    </li>
+                                </ol>
+                            </dd>
+                        </li>
+                        <li>
+                            <dt>Decrement (--) : </dt>
+                            <dd>
+                                type of decrement
+                                <ol>
+                                    <li>
+                                        <div>pre : </div>
+                                        <div>
+                                            we update the value first and then we use the value.
+                                        </div>
+                                        <pre>
+                                            let a = 5;
+                                            -- a;
+                                        </pre>
+                                    </li>
+                                    <li>
+                                        <div>post : </div>
+                                        <div>
+                                            we use the value first and then we update the value.
+                                        </div>
+                                        <pre>
+                                            let a = 5;
+                                            a --;
+                                        </pre>
+                                    </li>
+                                </ol>
+                            </dd>
+                        </li>
+                    </ol>
+                </dd>
+            </li>
             <li>conditional Ops/ ternary ops</li>
         </ol>
     </section>
