@@ -31,17 +31,131 @@
 // // console.log(!false);
 
 
-let a = 6;
+// let a = 6;
 
-console.log(a++ );  //6
-console.log(a ++ ); //7
-console.log(a ++);  //8
-console.log(++ a);  //10
-console.log(-- a);  //9
-console.log(++ a);  //10
-console.log(a ++);  //10
-console.log(a --);  //11
-console.log(a --);  //10
-console.log(-- a);  //8
-console.log(a++ );  //8
-console.log(a);     //9
+// console.log(a++ );  //6
+// console.log(a ++ ); //7
+// console.log(a ++);  //8
+// console.log(++ a);  //10
+// console.log(-- a);  //9
+// console.log(++ a);  //10
+// console.log(a ++);  //10
+// console.log(a --);  //11
+// console.log(a --);  //10
+// console.log(-- a);  //8
+// console.log(a++ );  //8
+// console.log(a);     //9
+
+// let databaseUsername = "tony@gmail.com";
+// let databaseUserPassword = "Tony@1234";
+
+// let username = "tony@gmail.com";
+// let password = "Tony@1234";
+
+// console.log(databaseUsername == username && databaseUserPassword == password);
+
+// (databaseUsername == username && databaseUserPassword == password)? console.log("login successful") :console.log("invalid username or password");
+
+// 2 number - largest number 
+
+// let num1 = 6;
+// let num2 = 5;
+// let num3 = 7;
+
+// //condition - main
+// (num1 > num2)? 
+// //true block
+// (num1 > num3)? console.log(num1, 'is larger than',num2,num3) : console.log(num3,'is larger than', num1,num2)
+// : 
+// //false block
+// (num2 > num3)? console.log(num2, 'is larger than',num1,num3) : console.log(num3,'is larger than', num1,num2)
+
+
+//print the if block statements only when a value is not empty
+
+// let a = "";
+
+// if(a){
+//     console.log("if statements");
+// }
+
+// let num1 = 98;
+// let num2 = 17;
+
+// if(num1 > num2){
+//     console.log(num1, "is larger than",num2);
+// }
+
+// if(num2 > num1){
+//     console.log(num2,'is larger than',num1);
+// }
+
+// if(num1 > num2){
+//     console.log(num1, "is larger than",num2);
+// }else{
+//     console.log(num2,'is larger than',num1);
+// }
+
+
+// let num3 = 78;
+
+// if(num1 > num2 && num1 > num3){
+//     console.log(num1, "largest number");
+// }
+
+// if(num2 > num1 && num2 > num3){
+//     console.log(num2, "is larger than ",num1, num3);
+// }
+
+// if(num3 > num1 && num3 > num2){
+//     console.log(num3, "is larger than ",num1, num2);
+// }
+
+
+// if(num1 > num2 && num1 > num3){
+//     console.log(num1, "largest number");
+// }else if(num2 > num3){
+//     console.log(num2, "is greater than",num1,num3);
+// }else{
+//     console.log(num3,"is greater than",num1,num2);
+// }
+
+// let value = 1;
+// let userRole = "sales";
+
+// switch(userRole){
+//     case "admin":
+//         console.log("this is case 4");
+//         console.log("this is case 4");
+//         console.log("this is case 4");
+//         console.log("this is case 4");
+//         console.log("this is case 4");
+//     break;
+//     case "sales":
+//         console.log("case 1");
+//         console.log("case 1");
+//         console.log("case 1");
+//         console.log("case 1");
+//     break;
+//     case "developer" : 
+//         console.log("case 2");
+//         console.log("case 2");
+//         console.log("case 2");
+//         console.log("case 2");
+//         console.log("case 2");
+//     break;
+//     default : 
+//         console.log("default block");
+//     break;
+// }
+
+
+/* 
+Assignment : 
+
+write a program to find the largest number of the below expression
+num1 = 3 + 4 + 6
+num2 = 3%2 - 1
+num3 = 4/2*2-1%(7-4)
+
+write a program to find the even or odd number */

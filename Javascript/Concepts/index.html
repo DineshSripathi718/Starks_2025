@@ -487,7 +487,106 @@
                     </ol>
                 </dd>
             </li>
-            <li>conditional Ops/ ternary ops</li>
+            <li>
+                <dt>conditional Ops/ ternary ops</dt>
+                <dd>
+                    will helps us to evaluate the condition and execute the statement.
+                    <pre>
+                        syntax : 
+                            (condition)? true-block : false-block;
+                        
+                        Example : 
+                            let databaseUsername = "tony@gmail.com";
+                            let databaseUserPassword = "Tony@1234";
+
+                            let username = "tony@gmail.com";
+                            let password = "Tony@1234";
+
+                            console.log(databaseUsername == username && databaseUserPassword == password);
+
+                            (databaseUsername == username && databaseUserPassword == password)? console.log("login successful") :console.log("invalid username or password");
+                    </pre>
+                </dd>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h3>conditional statements</h3>
+        <p>
+            perform an operation based on condition. It can handle multiple conditions with less complexity
+        </p>
+        <ol>
+            <li>
+                <dt>Simple If</dt>
+                <dd>
+                    It will only work when the condition if true. 
+                    <pre>
+                        syntax : 
+                            if(condition){
+                                //block of statements
+                            }
+                    </pre>
+                </dd>
+            </li>
+            <li>
+                <dt>if else : </dt>
+                <dd>
+                    executes the if statment if it is true or else it will execute <b>else</b> statements
+                </dd>
+                <pre>
+                    syntax : 
+                        if(true){
+                            //block of if statements
+                        }else{
+                            //block of else statements
+                        }
+                </pre>
+            </li>
+            <li>
+                <dt>if else if : </dt>
+                <dd>
+                    Will help us execute multiple conditions at a time. 
+                    <pre>
+                        Syntax : 
+                            if(cond1){
+                                //if block statements
+                            }else if(cond2){
+                                //else if block statements
+                            }.
+                            .
+                            .
+                            else{
+                                //else block statements
+                            }
+                    </pre>
+                </dd>
+            </li>
+            <li>
+                <dt>switch : </dt>
+                <dd>
+                    unlike remaining conditional statements switch will not work on conditions.
+                </dd>
+                <p>
+                    switch needs an input.
+                </p>
+                <ol>
+                    <li>input/ value</li>
+                    <li>case</li>
+                </ol>
+                <pre>
+                    syntax : 
+                        switch(input){
+                            case value : 
+                                //block of code
+                            break;
+                            case value : 
+                                ..
+                            default: 
+                                //block of code
+                            break;
+                        }
+                </pre>
+            </li>
         </ol>
     </section>
 </body>
