@@ -159,3 +159,74 @@ num2 = 3%2 - 1
 num3 = 4/2*2-1%(7-4)
 
 write a program to find the even or odd number */
+
+// let num1 = 1;
+
+// if(num1 % 2 == 0){
+//     console.log("Even number");
+// }else{
+//     console.log("Odd number");
+// }
+
+// console.log("fkjaslkdfj;lsdfjl;s")
+
+// num1 = 2;
+// if(num1 % 2 == 0){
+//     console.log("Even number");
+// }else{
+//     console.log("Odd number");
+// }
+
+// num1 = 3;
+// if(num1 % 2 == 0){
+//     console.log("Even number");
+// }else{
+//     console.log("Odd number");
+// }
+
+
+// for(let i = 1; i <= 10; i ++){
+//     if(i % 2 == 0){
+//         console.log(i,"Even number");
+//     }else{
+//         console.log(i,"Odd number");
+//     }
+// }
+
+//write a program to find the sum of 10 natural numbers.
+//write a program to find if the sum of 10 natural numbers is a even or odd number
+//write a program to print the output as shown below
+// *******
+// ******
+// *****
+// ****
+// ***
+// **
+// *
+
+//prime number - divi 1 and itself - 2 times
+
+// let num = 15;
+
+// for(let num = 1; num <= 100; num ++){
+   
+//     let count = 0;
+
+//     for(let i = 1; i <= num; i ++){
+//         if(num % i == 0){
+//             count ++;
+//         }
+//     }
+
+//     if(count == 2){
+//         console.log("prime number");
+//     }else{
+//         console.log("composite number");
+//     }
+// }
+
+// for(let i = 1; i <= 3; i ++){
+//     for(let j = 1; j <= 3; j ++){
+//         console.log('i : ',i,"j : ",j);
+//     }
+// }

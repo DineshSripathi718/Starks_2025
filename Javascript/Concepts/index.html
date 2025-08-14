@@ -58,6 +58,31 @@
                 </i>
             </b>
         </div>
+        <div>
+            <h4>Scope of variable : </h4>
+            <p>
+                The range which we can access the variables.
+                <ol>
+                    <li>
+                        <dt>Global Level : </dt>
+                        <dd>
+                            let a = 5;
+                        </dd>
+                    </li>
+                    <li>
+                        <dt>Block level/ Local level : </dt>
+                        <dd>
+                            <pre>
+                                for(let i = 1; i <= 4; i ++){
+                                    console.log(i);
+                                }
+                                console.log(i); //we can access i as it is outside the scope
+                            </pre>
+                        </dd>
+                    </li>
+                </ol>
+            </p>
+        </div>
     </section>
     <section>
         <h2>Operators : </h2>
@@ -588,6 +613,34 @@
                 </pre>
             </li>
         </ol>
+    </section>
+    <section>
+        <h1>Loops : </h1>
+        <p>
+            Used to iterate a set/ block of code n number of times.
+        </p>
+        <ul>
+            <li>
+                <dt>For loop</dt>
+                <dd>
+                    Used to iterate a set statements n number of times.
+                </dd>
+                <pre>
+                    Syntax : 
+                        for(init; condition; update){
+                            //block of code
+                        }
+                        
+                    flow : 
+                        1.init - variable
+                        2. condition - true 
+                        3. Execution - block of code 
+                        4. update -> goto 2
+                </pre>
+            </li>
+            <li>while loop</li>
+            <li>do-while loop</li>
+        </ul>
     </section>
 </body>
 <!-- 
