@@ -204,6 +204,17 @@ write a program to find the even or odd number */
 // **
 // *
 
+// let pattern = "";
+// for(let stars = 7; stars >= 1; stars --){
+//     for(let i = stars; i >= 1; i --){
+//         pattern += i;
+//     }
+    
+//     pattern += '\n';
+// }
+
+// console.log(pattern);
+
 //prime number - divi 1 and itself - 2 times
 
 // let num = 15;
@@ -230,3 +241,80 @@ write a program to find the even or odd number */
 //         console.log('i : ',i,"j : ",j);
 //     }
 // }
+
+/* //init
+let userChoice = true;
+
+//condition
+while(userChoice){
+    let num = Number(prompt("Enter a number"));
+
+    let zeroCount = 0;
+    for(let i = 1; i <= num; i ++){
+        if(num % i == 0){
+            zeroCount ++;
+        }
+    }
+
+    if(zeroCount == 2){
+        console.log(num,"Prime number")
+    }else{
+        console.log(num," is not a prime number");
+    }
+
+    const userInput = prompt("Do you want to check another number : (yes or no) : ");
+
+    //update
+    if(userInput == "yes"){
+        userChoice = true;
+    }else{
+        userChoice = false;
+    }
+} */
+
+/* //init
+let userChoice = true;
+
+//condition
+for(;userChoice;){
+    let num = Number(prompt("Enter a number"));
+
+    let zeroCount = 0;
+    for(let i = 1; i <= num; i ++){
+        if(num % i == 0){
+            zeroCount ++;
+        }
+    }
+
+    if(zeroCount == 2){
+        console.log(num,"Prime number")
+    }else{
+        console.log(num," is not a prime number");
+    }
+
+    const userInput = prompt("Do you want to check another number : (yes or no) : ");
+
+    //update
+    if(userInput == "yes"){
+        userChoice = true;
+    }else{
+        userChoice = false;
+    }
+} */
+
+
+//convert all the for loop assign into while loop and do-while loop and push in git repo
+
+// let i = 9;
+// while(i <= 7){
+//     console.log("inside while loop");
+//     i ++;
+// }
+
+
+// i = 1;
+// do{
+//     console.log("inside do while loop");
+//     i ++;
+// }while(i <= 7);
+
