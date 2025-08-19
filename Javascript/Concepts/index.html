@@ -676,6 +676,68 @@
             </li>
         </ul>
     </section>
+    <section>
+        <h1>Arrays : </h1>
+        <p>
+            Collection of data/ values. Arrays are mutable. It will have dynamic size.
+        </p>
+        <ul>
+            <li>
+                <dt>using square brackets</dt>
+                <dd>
+                    <pre>
+                        let a = []
+                    </pre>
+                </dd>
+            </li>
+            <li>
+                <dt>Using new Array()</dt>
+                <dd>
+                    <pre>
+                        let a = new Array();
+                    </pre>
+                </dd>
+            </li>
+        </ul>
+
+        <p>
+            To insert data inside array we can use index values.
+            <pre>
+                syntax : 
+                    let a = [];
+                    a[0] = 1;
+                    a[1] = 2;
+                    console.log(a); //output : [1,2]
+            </pre>
+        </p>
+        <div>
+            <h4>Array methods : </h4>
+            <ol>
+                <li>Length : used to find the array size</li>
+                <li>push() - addes value at the end of array</li>
+                <li>
+                    pop() - removes the last value inside the array
+                </li>
+                <li>
+                    unshift() - addes element/ value at the start of the array
+                </li>
+                <li>
+                    shift() - removes the element from the start
+                </li>
+                <li>
+                    splice() - adding, deleting
+                    <dt>adding element into the array : </dt>
+                    <dd>
+                        splice(index, 0, data)
+                    </dd>
+                    <dt>removing elements into the array : </dt>
+                    <dd>
+                        splice(index, noOf values to delete)
+                    </dd>
+                </li>
+            </ol>
+        </div>
+    </section>
 </body>
 <!-- 
     linking javascript file with script tag

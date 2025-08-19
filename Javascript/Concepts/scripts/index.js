@@ -318,3 +318,92 @@ for(;userChoice;){
 //     i ++;
 // }while(i <= 7);
 
+// let pattern = "";
+
+// let i = 7;
+// do{
+    
+//     let j = i;
+//     do{
+//         pattern += "*";
+//         j --;
+//     }while(j >= 1)
+
+//     pattern += '\n';
+//     i --;
+// }while(i >= 1);
+
+// console.log(pattern);
+
+// let i = 1;
+
+// do{
+//     console.log(i,"do while");
+//     i ++;
+// }while( i <= 10);
+
+// let a = 5;
+
+// console.log(a); // 5
+
+// a = 6;
+// console.log(a); //6
+
+// a = 6;
+
+// console.log(a); //error | 6 | 5
+
+// a = 9;
+
+// console.log(a); //error | 9
+
+// let a = [1,2,3,4,5,6,7,8,9];
+// let b = new Array();
+// console.log(typeof(a));
+
+// console.log(a);
+// console.log(a[2]);
+// a[2] = 33;
+// console.log(a);
+// console.log(a.length);
+
+let a = [1,2,3,4,5,6,8,9,100,101];
+console.log(a.length);
+// // a[90] = 45;
+// a.push(45);
+// a.push(32);
+// a.push(12);
+// a.push(11);
+// console.log(a);
+
+// a.pop();
+// console.log(a);
+
+// a.unshift(5);
+// console.log(a);
+
+// a.shift();
+// console.log(a);
+
+// a.splice(5, 0, 55, 45, 35);
+// console.log(a);
+
+// a.splice(5,6, 45, 65);
+// console.log(a);
+
+// //sum of values inside array
+
+// let sum = 0;
+
+// for(let i = 0; i < a.length; i ++){
+//     sum += a[i];
+// }
+
+// console.log(sum);
+
+//find the even numbers inside an array
+//find the odd numbers inside an array
+//find the sum of array and check if it is an even number or odd number
+// find the prime numbers inside an array
+// find the maximum number inside an array
+// find the minimum number inside an array
