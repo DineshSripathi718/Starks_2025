@@ -178,3 +178,83 @@ do {
     console.log(starss);
     k--;
 }while (k >=1);
+
+
+//even number program
+let arr=[1,2,4,5,7,8,22,43,49,50,32];
+for(let i=0;i<arr.length;i++){
+    if(arr[i]%2==0){
+        console.log(arr[i],"even number");
+    }
+}
+
+
+//find the odd numbers inside an array
+
+for(let i=0;i<arr.length;i++){
+    if(arr[i]%2 !=0){
+        console.log(arr[i],"are odd numbers")
+    }
+}
+//find the sum of array and check if it is an even number or odd number
+
+let adding=0;
+
+for(let i=0;i<arr.length;i++){
+    adding += arr[i];
+}
+
+if(adding%2==0){
+    console.log(adding,"is even number");
+}
+else{
+    console.log(adding,"is odd number");
+}
+
+// find the prime numbers inside an array
+
+for(let i=0;i<arr.length;i++){
+    let num=arr[i];
+    let count=0;
+    for(j=1;j<=num;j++){
+        if(num%j==0){
+            count++;
+        }
+    }
+    
+    if(count==2){
+        console.log(arr[i],"is prime number");
+    }
+    else if(count==1)
+    {
+        console.log(arr[i],"is niether prime nor composite");
+    }
+    else
+    {
+        console.log(arr[i],"is composite number");
+    }
+}
+
+// find the maximum number inside an array
+
+
+let max = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+console.log("Max element:", max);
+
+// find the minimum number inside an array
+
+
+let min = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+    if (f[i] < min) {
+        max = arr[i];
+    }
+}
+console.log("Min element:", min);
