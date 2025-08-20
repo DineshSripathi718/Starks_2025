@@ -367,8 +367,52 @@ for(;userChoice;){
 // console.log(a);
 // console.log(a.length);
 
-let a = [1,2,3,4,5,6,8,9,100,101];
-console.log(a.length);
+// let a = [1,2,3,4,5];
+// let b = [11,12,13,a];
+
+// console.log(a);
+// console.log(b);
+
+// for(let i = 0; i < b.length; i ++){
+//     console.log(b[i]);
+//     if(i == 3){
+//         for(let j = 0; j < b[i].length ;j ++){
+//             console.log(b[i][j]);
+//         }
+//     }
+// }
+
+// let a = [1,12,55,33,14,55,6,8,9,55,100,101];
+// let b = [1,2,3]
+// b.push(a);
+
+// console.log(b);
+
+// console.log(a.indexOf(55, a.indexOf(55) + 1));
+// console.log(a.lastIndexOf(55));
+
+// let b = new Array(10);
+// console.log(b.fill(4, 10));
+// console.log(a.fill(4, 14, 17));
+// console.log(a.includes(55));
+// console.log(a.includes(14, 3));
+// let b = [];
+// for(let i = 0; i < a.length; i ++){
+//     b.push(a[i]);
+// }
+
+
+
+// console.log("a : ",a);
+// console.log("b : ",b);
+
+// a[9] = 103;
+// console.log("a : ",a);
+// console.log("b : ",b);
+
+// console.log(a.sort());
+// console.log(a.slice(2, 8));
+// console.log(a.length);
 // // a[90] = 45;
 // a.push(45);
 // a.push(32);
@@ -407,3 +451,56 @@ console.log(a.length);
 // find the prime numbers inside an array
 // find the maximum number inside an array
 // find the minimum number inside an array
+
+let a  = [1,2,3,4,5];
+
+let b = [11,12,13,14,15];
+
+let c = [21,22,23,24,25];
+
+// for(let i = 0; i < a.length; i ++){
+//     if(a[i] % 2 == 0)
+//         console.log(a[i],"is a even number");
+//     else
+//         console.log(a[i],"is a odd number");
+// }
+
+
+// for(let i = 0; i < b.length; i ++){
+//     if(b[i] % 2 == 0)
+//         console.log(b[i],"is a even number");
+//     else
+//         console.log(b[i],"is a odd number");
+// }
+
+
+// for(let i = 0; i < c.length; i ++){
+//     if(c[i] % 2 == 0)
+//         console.log(c[i],"is a even number");
+//     else
+//         console.log(c[i],"is a odd number");
+// }
+
+// function sample(name = "guest",age=20){
+//     console.log(name,"sample",age);
+// }
+
+// sample();
+// sample("raj",24);
+// sample("tina",34);
+
+function findEvenOrOdd(array){
+    for(let i = 0; i < array.length; i ++){
+        if(array[i]%2 == 0)
+            console.log(array[i],"is even number");
+        else
+            console.log(array[i],"is odd number");
+    }
+}
+
+
+findEvenOrOdd(a);
+findEvenOrOdd(b);
+findEvenOrOdd(c);
+
+//convert all the assignments into functions if necessary
