@@ -458,6 +458,8 @@ let b = [11,12,13,14,15];
 
 let c = [21,22,23,24,25];
 
+
+// //a- name - array
 // for(let i = 0; i < a.length; i ++){
 //     if(a[i] % 2 == 0)
 //         console.log(a[i],"is a even number");
@@ -466,6 +468,7 @@ let c = [21,22,23,24,25];
 // }
 
 
+// //b - name - array
 // for(let i = 0; i < b.length; i ++){
 //     if(b[i] % 2 == 0)
 //         console.log(b[i],"is a even number");
@@ -474,6 +477,7 @@ let c = [21,22,23,24,25];
 // }
 
 
+// //c - name - array
 // for(let i = 0; i < c.length; i ++){
 //     if(c[i] % 2 == 0)
 //         console.log(c[i],"is a even number");
@@ -489,18 +493,100 @@ let c = [21,22,23,24,25];
 // sample("raj",24);
 // sample("tina",34);
 
-function findEvenOrOdd(array){
-    for(let i = 0; i < array.length; i ++){
-        if(array[i]%2 == 0)
-            console.log(array[i],"is even number");
-        else
-            console.log(array[i],"is odd number");
-    }
-}
+// function findEvenOrOdd(array){
+//     if(array.length >= 1){
+//         for(let i = 0; i < array.length; i ++){
+//             if(array[i]%2 == 0)
+//                 console.log(array[i],"is even number");
+//             else
+//                 console.log(array[i],"is odd number");
+//         }
+//     }else{
+//         if(array%2 == 0)
+//             console.log(array,"is even number");
+//         else
+//             console.log(array,"is odd number");
+//     }
+// }
 
 
-findEvenOrOdd(a);
-findEvenOrOdd(b);
-findEvenOrOdd(c);
+// findEvenOrOdd(a);
+// findEvenOrOdd(b);
+// findEvenOrOdd(c);
 
 //convert all the assignments into functions if necessary
+
+// let users = ["Ram", "Tina", "John", "Ramesh"];
+
+//if user exist -> welcome name
+//else user not exist
+
+// function isUserPresent(user){
+//     return users.includes(user);
+//     console.log(users);
+// }
+
+// let user = prompt("Enter username : ");
+
+// if(isUserPresent(user)){
+//     let num = Number(prompt("Enter a number"));
+
+//     if(num%2 == 0)
+//         console.log(num,"even number");
+//     else
+//         console.log(num,"odd number");
+// }else{
+//     console.log("user not present");
+// }
+
+
+// function add(a, b){
+//     console.log(a + b);
+//     return a + b;
+// }
+
+
+// let variable = add(3,2);
+// console.log(variable * 2);
+
+
+//check if the given number is prime number or not if it is a prime number then square it and then check if the square of prime number is even.
+
+// let num = Number(prompt("Enter a number"));
+
+// function isPrimeNumber(number){
+//     let count = 0;
+//     for(let i = 1; i <= number; i ++){
+//         if(number%i == 0)
+//             count ++;
+//     }
+
+//     if(count == 2)
+//         return true;
+//     else
+//         return false;
+// }
+
+// if(isPrimeNumber(5)){
+//     let square = 5 * 5;
+//     findEvenOrOdd(square);
+// }
+
+
+
+function sample1(para1){
+    para1();
+}
+
+const sample2 = (para1, para2) => {
+    console.log(para1,"sample 2",para2);
+}
+
+const add = (para1, para2) => para1 + para2;
+
+
+console.log(add(5,7));
+console.log(add(58,5));
+
+
+//convert all the function into arrow functions
