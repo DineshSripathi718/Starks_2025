@@ -574,19 +574,114 @@ let c = [21,22,23,24,25];
 
 
 
-function sample1(para1){
-    para1();
-}
+// function sample1(para1){
+//     para1();
+// }
 
-const sample2 = (para1, para2) => {
-    console.log(para1,"sample 2",para2);
-}
+// const sample2 = (para1, para2) => {
+//     console.log(para1,"sample 2",para2);
+// }
 
-const add = (para1, para2) => para1 + para2;
+// const add = (para1, para2) => para1 + para2;
 
 
-console.log(add(5,7));
-console.log(add(58,5));
+// console.log(add(5,7));
+// console.log(add(58,5));
 
 
 //convert all the function into arrow functions
+// a[90] = 89;
+// let sum = 0;
+// console.log(a.length);
+// for(let i = 0; i < a.length; i ++){
+//     sum += a[i];
+// }
+
+// console.log(sum);
+// console.log(a);
+//unwanted iterations - undefined + sum = NaN
+
+// sum = 0;
+// function forEachHandler(element, index, array){
+//     sum += element;
+// }
+
+// a.forEach(forEachHandler);
+
+// a.forEach(
+//     (element, index) => {
+//         sum += element;
+//     }
+// );
+// console.log(sum);
+
+
+
+
+
+
+
+a = [1,2,3,4,5,6,7];
+
+a[20] = 34;
+
+// console.log(a);
+
+//iterations will be performed based on index values
+// for(let i = 0; i < a.length; i ++){
+//     console.log(a[i]);
+// }
+
+
+//iterations will be performed based on elements or values inside array
+// a.forEach(
+//     (e, i) => {
+//         console.log(e, i);
+//     }
+// );
+
+//array which is going have square values of a. Need to have the same length as a array
+
+// function squareValue(e,i){
+//     return i * i;
+// }
+
+
+// const duplicateArray = a.map(squareValue);
+
+// b = a;
+// console.log("B array : ",a);
+// console.log("base array : ",a);
+// console.log("Duplicate Array : ",duplicateArray);
+
+// console.log("after changing the value : ");
+// a[2] = 33;
+// console.log("B array : ",a);
+// console.log("base array : ",a);
+// console.log("Duplicate Array : ",duplicateArray);
+
+// console.log(a);
+// const newArray = a.filter(
+//     (e,i, arr) => {
+//         return e%2 == 0;
+//     }
+// );
+
+// console.log(newArray);
+
+console.log(a);
+
+const value = a.find((e) => {
+    return e == 4;
+});
+
+// const value = a.reduce(
+//     (pv,cv) => {
+//         console.log(pv,cv);
+//         return pv + cv;
+//     }
+// );
+
+
+console.log(value);
+
