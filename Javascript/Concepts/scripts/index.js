@@ -1,4 +1,4 @@
-// let value1 = 6;
+//  4let value1 = 6;
 // let value2 = 7;
 
 // //add value2 with value1 and store the result inside value1
@@ -669,11 +669,11 @@ a[20] = 34;
 
 // console.log(newArray);
 
-console.log(a);
+// console.log(a);
 
-const value = a.find((e) => {
-    return e == 4;
-});
+// const value = a.find((e) => {
+//     return e == 4;
+// });
 
 // const value = a.reduce(
 //     (pv,cv) => {
@@ -683,5 +683,116 @@ const value = a.find((e) => {
 // );
 
 
-console.log(value);
+// console.log(value);
+
+// let name = "Tony Stark";
+// let str1 = `This is a simple adventure taken by ${name}, with the ${name} money. with a lot of struggle.${name} finally found some things`;
+
+// //length : 134
+// //index : 0 - 133
+// console.log(str1.length);
+// console.log(str1.charAt(8));
+// console.log(str1[0]);
+// str1[0] = "H";
+// console.log(str1)
+// console.log(str1.indexOf("t"));
+// console.log(str1.lastIndexOf("T"));
+
+// //find in which positions we have the character 'a' in a string.
+// console.log(str1);
+// // console.log(str1.codePointAt(7))
+// console.log(str1.substring(7,18));
+// console.log(str1.slice(7,18));
+// let strArr = str1.split('');
+// strArr[0] = "H";
+
+// console.log(strArr.join(""));
+// console.log(str1.startsWith('T'));
+// console.log(str1.endsWith('s'));
+// const date = "11";
+
+// console.log(date.padStart(2,'0'));
+// console.log(date.padEnd(2,0));
+// console.log(str1);
+// console.log(str1.toUpperCase());
+// console.log(str1.toLowerCase());
+
+//count number of ovwels in a string
+//count number of consonants in a string
+//find the most used character in a string.
+//find the ovwels in a string and replace them with space.
+
+// console.log(a);
+// console.log(b);
+
+// // I want to place all the b array values inside a A array.
+
+// a.push(...b);
+
+
+// console.log(a);
+
+
+// function sample(a,b, ...rest){
+//     console.log(a,b,rest);
+// }
+
+// sample(2,3,4,5); //2,3 | 4,5
+
+
+//   
+
+// obj1.fee = 80000;
+
+// console.log(obj1);
+
+// console.log(obj1.name);
+// console.log(obj1.age);
+
+
+
+// function sample(a,b,...rest){
+//     console.log(a,b,rest);
+// }
+
+// sample(2,3);
+// sample(2);
+// sample();
+// sample(2,3,4,5,6);
+
+// console.log("before for loop");
+
+// for(let i = 1; i <= 4; i ++)
+//     console.log(i);
+
+// console.log("After for loop");
+
+
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+
+// let id = setInterval(() => {
+//     console.log("Timeout statement");
+// }, 3000);
+
+// // clearTimeout(id);
+// clearInterval(id);
+
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+// console.log("statement");
+
+
+
+
+
+
 
