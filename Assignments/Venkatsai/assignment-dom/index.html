@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #imageContainer img {
+        max-width: 300px;
+        margin-top: 10px;
+        }
+  </style>
+
+</head>
+<body>
+    <select id="options">
+        <option value="select from the category">select from the category</option>
+        <option value="lion">lion</option>
+        <option value="tiger">tiger</option>
+        <option value="cat">cat</option>
+        <option value="dog">dog</option>
+        <option value="mouse">mouse</option>
+    </select>
+    <button onclick="showImage()">show</button>
+    <div id="imageContainer"></div>
+    <button id="hideBtn" onclick="hideImage()">Hide</button>
+
+
+</body>
+<script src="./scripts/index.js"></script>
+</html>
