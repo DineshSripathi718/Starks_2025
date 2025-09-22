@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/what.jpg" type="image/x-icon">
+    <title>Random Number Guessing Game</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Preload audio files for feedback -->
+    <link rel="preload" href="./assets/correct.mp3" as="audio">
+    <link rel="preload" href="./assets/wrong.mp3" as="audio">
+</head>
+<body>
+    <header>
+        Number Guessing Game
+    </header>
+    <main>
+        <section class="user-profile-container">
+            <div class="playername">
+                <span id="playername"></span>
+                <button id="playernameEditBtn">edit</button>
+            </div>
+            <div class="score-container">
+                <h3>score : <span id="score"></span></h3>
+            </div>
+            <div class="level-container">
+                <select name="level" id="level">
+                    <option value="">Select level</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </section>
+        <section class="chances-container">
+            <h1>
+                Remaining Chances : <span id="chance-count"></span>
+            </h1>
+        </section>
+        <form id="number-guessing-form">
+            <div class="errors"></div>
+            <div class="note">please select a number between 1 to 10</div>
+            <input type="text" name="number" id="number" placeholder="ex : 1">
+            <input type="submit" value="guess">
+        </form>
+        <section class="top-players">
+            <h1>Top 3 Players</h1>
+            <div id="hallOfFameContainer"></div>
+        </section>
+    </main>
+    <div id="pop-up">
+        <div class="pop-up-title"></div>
+        <div class="pop-up-info"></div>
+        <button id="popupCloseBtn">close</button>
+    </div>
+    <footer>
+        &copy; 2025 Dinesh Sripathi. All rights reserved.
+    </footer>
+</body>
+<script src="./Scripts/index.js"></script>
+</html>

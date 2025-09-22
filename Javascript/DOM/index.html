@@ -13,9 +13,59 @@
             background-color: black;
             color : white;
         }
+        .error{
+            color : red;
+        }
+
+        .success{
+            color :green;
+        }
+
+        input.error{
+            color : black;
+            border : 1px solid red;
+        }
     </style>
 </head>
 <body>
+    <section>
+        <form id="registerForm">
+            <div>
+                <label for="username">Enter your Full name : </label>
+                <input class="error" type="text" name="username" id="username">
+                <div class="success" id="usernameSuccess"></div>
+                <div class="error" id="usernameError"></div>
+            </div>
+            <div>
+                <label for="email">Enter your email : </label>
+                <input class="error" type="email" name="email" id="email">
+                <div class="success" id="emailSuccess"></div>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div>
+                <label for="phone">Enter your phone number : </label>
+                <input class="error" type="tel" name="phone" id="phone">
+                <div class="success" id="phoneSuccess"></div>
+                <div class="error" class="error" id="phoneError"></div>
+            </div>
+            <div>
+                <label for="password">Enter your password ; </label>
+                <input type="password" name="password" id="password">
+                <div class="success" id="passwordsuccess"></div>
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div>
+                <label for="rePassword">Re enter your password : </label>
+                <input type="password" name="rePassword" id="rePassword">
+                <div class="success" id="rePasswordSuccess"></div>
+                <div class="error" id="rePasswordError"></div>
+            </div>
+            <div>
+                <input type="submit" value="Register">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </section>
     <section>
         <p class="para para1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo quasi placeat deleniti beatae saepe voluptas at labore laboriosam laudantium iure distinctio perferendis, sit, ab adipisci dignissimos, vero tempora nulla!

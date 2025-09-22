@@ -791,8 +791,15 @@ a[20] = 34;
 // console.log("statement");
 
 
+console.log(Math.round(4.1));
+console.log(Math.round(4.4));
+console.log(Math.round(4.5));
+console.log(Math.round(4.9));
 
-
+// 0 - n-1 - floor
+// 0 - n   - round
+// 1 - n - ceil
+console.log(Math.round(Math.random() * 5));
 
 
 

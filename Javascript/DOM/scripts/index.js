@@ -60,3 +60,74 @@ function colorChanger(){
 
 button.addEventListener('click', buttonHandler);
 button.addEventListener('click', colorChanger);
+
+
+
+const registerForm = document.getElementById('registerForm');
+
+registerForm.addEventListener(
+    'submit', (e) => {
+        //preventing the page load
+        e.preventDefault();
+
+        //selecting the input fields
+        const usernameInput = document.getElementById("username");
+        const emailInput = document.getElementById("email");
+        const phoneInput = document.getElementById("phone");
+        const passwordInput = document.getElementById("password");
+        const rePasswordInput = document.getElementById("rePassword");
+
+        const formData = {
+            username : usernameInput.value,
+            email : emailInput.value,
+            phone : phoneInput.value,
+            password : passwordInput.value,
+            rePassword : rePasswordInput.value
+        }
+
+        console.log(formData);
+
+        validateForm(formData);
+
+        usernameInput.value = "";
+        emailInput.value = "";
+        phoneInput.value = "";
+        passwordInput.value = "";
+        rePasswordInput.value = "";
+    }
+);
+
+
+function validateForm({username, email, phone, password, rePassword}){
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\\d)(?=.*[_@$!%*#?&])[A-Za-z\\d_@$!%*#?&]{8,}$/;
+
+    const indianPhoneRegex = /^[6-9]\d{9}$/;
+
+    const usernameErrorField = document.getElementById('usernameError');
+
+    const userSuccessField = document.getElementById('usernameSuccess');
+
+    const emailErrorField = document.getElementById('emailError');
+
+    const emailSuccessField = document.getElementById("emailSuccess");
+
+    if(username === ""){
+        usernameErrorField.innerText = "Username should not be empty"    
+    }else{
+        usernameErrorField.innerText = "";
+        userSuccessField.innerText = "Looks Good !";
+    }
+
+    if(email === ""){
+        emailErrorField.innerText = "Email should not be empty";
+    }else{
+        if(emailRegex.test(email)){
+            emailErrorField = "";
+            emailSuccessField.innerText = "Looks Good !"
+        }else{
+            emailErrorField.innerText = "Enter a valid email";
+        }
+    }
+}   
