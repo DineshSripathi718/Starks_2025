@@ -1,0 +1,437 @@
+/* General Layout */
+header{
+    position: fixed;
+    top : 5%;
+    left : 5%;
+    background-color: white;
+    box-shadow: 0px 0px 10px black, inset 0px 0px 13px grey;
+    padding : 10px;
+    border-radius: 10px;
+    border : 1px solid transparent;
+    color: black;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+header:hover{
+    transform: scale(1.1) translateY(5px);
+} 
+
+body {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+        'title title title'
+        'flag name coat-of-arms'
+        'flag capital coat-of-arms'
+        'population region coat-of-arms'
+        'continent location coat-of-arms'
+        'border border border';
+    grid-auto-columns: 1fr;
+    grid-auto-rows: minmax(80px, auto);
+    justify-items: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, sans-serif;
+
+    /* Gradient background instead of image */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    gap: 20px;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+/* Glassmorphism Base */
+.glass {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 12px 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+    /* Fade-in Animation */
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* Sequential Animation Delay */
+.country-name   { animation-delay: 0.2s; }
+.capital        { animation-delay: 0.3s; }
+.population     { animation-delay: 0.4s; }
+.region-container { animation-delay: 0.5s; }
+.continent      { animation-delay: 0.6s; }
+.location       { animation-delay: 0.7s; }
+.coat-of-arms-container { animation-delay: 0.8s; }
+.borders        { animation-delay: 0.9s; }
+
+/* Title */
+.title {
+    grid-area: title;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    animation: popIn 1s ease forwards;
+}
+.title {
+    grid-area: title;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6f61, #fdd835, #4cafef, #8e24aa);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease infinite;
+    position: relative;
+}
+
+/* subtle glow */
+.title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #ff6f61, #fdd835, #4cafef, #8e24aa);
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Flag Styling */
+#flag-container {
+    grid-area: flag;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    transform: scale(0.9);
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 0.1s;
+}
+#flag-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+#flag-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Text Blocks */
+.country-name,
+.capital,
+.population,
+.continent,
+.region-container {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+.country-name {
+    grid-area: name;
+    font-size: 1.8rem;
+}
+.country-name {
+    grid-area: name;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: fadeSlideIn 1s ease-out;
+}
+
+/* Shimmer line animation */
+.country-name::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        180deg, 
+        transparent, 
+        rgba(255,255,255,0.6), 
+        transparent
+    );
+    animation: shimmer 2.4s infinite;
+}
+
+/* Entry animation */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+    0% { left: -100%; }
+    50% { left: 120%; }
+    100% { left: 120%; }
+}
+
+
+.capital {
+    grid-area: capital;
+    font-size: 1.2rem;
+}
+
+.capital {
+    grid-area: capital;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #90caf9;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: capitalSlide 1s ease forwards;
+    animation-delay: 0.6s; /* comes after population */
+}
+
+.capital::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background: #90caf9;
+    animation: underlineSweep 1.6s ease forwards infinite;
+    animation-delay: 1.2s;
+}
+
+/* Slide-in for capital */
+@keyframes capitalSlide {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Underline sweep */
+@keyframes underlineSweep {
+    to {
+        width: 100%;
+    }
+}
+
+
+.region-container {
+    grid-area: region;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.region {
+    font-weight: bold;
+    color: #ffecb3;
+}
+.sub-region {
+    font-size: 0.9rem;
+    color: #eee;
+}
+.population {
+    grid-area: population;
+}
+
+.population {
+    grid-area: population;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffecb3;
+    text-shadow: 0 0 8px rgba(255, 236, 179, 0.6);
+
+    /* Initial animation on load */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popFade 1s ease forwards, pulseGlow 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes popFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 8px rgba(255, 236, 179, 0.6);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 16px rgba(255, 236, 179, 1);
+        transform: scale(1.05);
+    }
+    100% {
+        text-shadow: 0 0 8px rgba(255, 236, 179, 0.6);
+        transform: scale(1);
+    }
+}
+
+
+.continent {
+    grid-area: continent;
+    font-weight: bold;
+    color: #ffecb3;
+}
+
+/* Coat of Arms */
+.coat-of-arms-container {
+    grid-area: coat-of-arms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.coat-of-arms-container img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+    transition: transform 0.4s ease;
+}
+.coat-of-arms-container:hover img {
+    transform: rotate(8deg) scale(2.1);
+}
+
+/* Location Links */
+.location {
+    grid-area: location;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.location a {
+    background: rgba(255, 193, 7, 0.3);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+.location a:hover {
+    background: rgba(255, 193, 7, 0.8);
+    color: #000;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Borders Section */
+.borders {
+    grid-area: border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.border-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+.border-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.border {
+    background: rgba(11, 61, 145, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transform: scale(.95);
+    transition: all 0.3s ease-in-out;
+}
+.border:hover {
+    transform: scale(1.15) rotate(-2deg);
+    background: rgba(255,255,255,0.8);
+    color: #0b3d91;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            'title'
+            'flag'
+            'name'
+            'capital'
+            'population'
+            'region'
+            'continent'
+            'location'
+            'coat-of-arms'
+            'border';
+        grid-auto-rows: auto;
+    }
+    .coat-of-arms-container img {
+        max-width: 120px;
+    }
+}
