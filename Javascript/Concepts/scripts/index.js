@@ -452,11 +452,11 @@ for(;userChoice;){
 // find the maximum number inside an array
 // find the minimum number inside an array
 
-let a  = [1,2,3,4,5];
+// let a  = [1,2,3,4,5];
 
-let b = [11,12,13,14,15];
+// let b = [11,12,13,14,15];
 
-let c = [21,22,23,24,25];
+// let c = [21,22,23,24,25];
 
 
 // //a- name - array
@@ -621,9 +621,9 @@ let c = [21,22,23,24,25];
 
 
 
-a = [1,2,3,4,5,6,7];
+// a = [1,2,3,4,5,6,7];
 
-a[20] = 34;
+// a[20] = 34;
 
 // console.log(a);
 
@@ -791,15 +791,35 @@ a[20] = 34;
 // console.log("statement");
 
 
-console.log(Math.round(4.1));
-console.log(Math.round(4.4));
-console.log(Math.round(4.5));
-console.log(Math.round(4.9));
+// console.log(Math.round(4.1));
+// console.log(Math.round(4.4));
+// console.log(Math.round(4.5));
+// console.log(Math.round(4.9));
 
 // 0 - n-1 - floor
 // 0 - n   - round
 // 1 - n - ceil
-console.log(Math.round(Math.random() * 5));
+// console.log(Math.round(Math.random() * 5));
 
+/* 
+    import and export
 
+    contact -> export sample()
+
+    index -> import sample
+
+    Rules : 
+        1. Default export
+        2. export
+    
+        1. We can't have more than 1 module per html page
+*/
+
+console.log("Home page js loaded")
+
+import fun,{ Sample as sample, testing } from "./Contact.js"
+
+sample();
+testing();
+fun();
 

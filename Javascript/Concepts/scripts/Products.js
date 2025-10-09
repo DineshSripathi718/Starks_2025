@@ -1,0 +1,1 @@
+console.log("Products page js loaded")
