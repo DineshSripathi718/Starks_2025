@@ -1,0 +1,13 @@
+h2{
+    background : green;
+    color : white;
+}
+
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap : 10px;
+    flex-wrap: wrap;
+}

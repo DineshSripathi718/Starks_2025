@@ -1,0 +1,9 @@
+h2{
+    background-color: yellow;
+    color : red;
+}
+
+h2:hover{
+    background-color: red;
+    color : yellow;
+}
