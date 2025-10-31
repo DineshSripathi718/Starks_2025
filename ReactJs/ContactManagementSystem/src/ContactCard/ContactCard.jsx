@@ -3,15 +3,19 @@ import './ContactCard.css'
 
 import contactImage from '../assets/image2.jpg'
 
-function ContactCard() {
+function ContactCard(prop) {
+  console.log(prop)
   return (
     <div className='contactCard'>
         <div className="imageContainer">
-            <img src={contactImage} alt="" />
+            <img src={prop.image} alt="" />
         </div>
         <div className="detailsContainer">
-            <div className="name">Gorege Gorggy</div>
-            <div className="number">7890717829</div>
+            <div className="name">{prop.name || "Tom"}</div>
+            <div className="number">{prop.phone || "00000000000"}</div>
+            <p>
+              {prop.children}
+            </p>
             <div className="button">
                 <button>view contact</button>
             </div>
