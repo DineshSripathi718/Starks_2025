@@ -1,13 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+
 .app {
   text-align: center;
-  font-family: Arial, sans-serif;
   padding: 50px;
-  background-color: #f0f8ff;
-  height: 100vh;
 }
 
 h1 {
   color: #333;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .counter h2 {
@@ -23,6 +33,7 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 button:nth-child(1) {
@@ -41,5 +52,6 @@ button:nth-child(3) {
 }
 
 button:hover {
+  transform: scale(1.05);
   opacity: 0.9;
 }
